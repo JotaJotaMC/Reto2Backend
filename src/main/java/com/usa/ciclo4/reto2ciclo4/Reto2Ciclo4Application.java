@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Reto2Ciclo4Application  implements CommandLineRunner{
 
 	@Autowired
-    private ProductCrudRepository interfaceChocolate;
+    private ProductCrudRepository interfaceAlbahaca;
     @Autowired
     private UserCrudRepository interfaceUser;
 	public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Reto2Ciclo4Application  implements CommandLineRunner{
 
 	@Override
     public void run(String... args) throws Exception {
-        interfaceChocolate.deleteAll();
+        interfaceAlbahaca.deleteAll();
         interfaceUser.deleteAll();
     }
 
