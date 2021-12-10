@@ -41,12 +41,15 @@ public class ProductService {
                 if (product.getDescription() != null) {
                     dbProduct.get().setDescription(product.getDescription());
                 }
-                if (product.getPrice() != 0.0) {
-                    dbProduct.get().setPrice(product.getPrice());
+                 if (product.getBrand()!= null) {
+                    dbProduct.get().setBrand(product.getBrand());
                 }
                 if (product.getPrice() != 0.0) {
                     dbProduct.get().setPrice(product.getPrice());
                 }
+                // if (product.getPrice() != 0.0) {
+               //     dbProduct.get().setPrice(product.getPrice());
+               // }
                 if (product.getQuantity() != 0) {
                     dbProduct.get().setQuantity(product.getQuantity());
                 }
